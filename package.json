@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy":"ng deploy --no-silent --base-href=/ngweb/ --name='YuTingKung' --email='davidkung007@gmail.com'"
+    "deploy": "ng deploy --no-silent --base-href=/ngweb/ --name='YuTingKung' --email='davidkung007@gmail.com'"
   },
   "private": true,
   "dependencies": {
