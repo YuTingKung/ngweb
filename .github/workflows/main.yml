@@ -45,5 +45,5 @@ jobs:
       # Use angular-cli-ghpages to deploy app
       - name: Deploy to github pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.NGWEBWORKFLOW }}
         run: npm run deploy
