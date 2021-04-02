@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-
+  dateTime = new Date().toLocaleTimeString('zh-TW', {timeZone: 'Asia/Taipei'});
   constructor() { }
 
   ngOnInit() {

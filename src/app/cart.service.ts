@@ -20,7 +20,8 @@ export class CartService {
   }
 
   getShippingPrices() {
-    return this.http.get('/assets/shipping.json');
+    console.log('log:',window.location.origin);
+    return this.http.get(window.location.origin + '/assets/shipping.json');
   }
   constructor(
     private http: HttpClient
