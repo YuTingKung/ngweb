@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
   })
@@ -20,8 +21,8 @@ export class CartService {
   }
 
   getShippingPrices() {
-    console.log('location log:',window.location);
-    return this.http.get(window.location.origin + '/assets/shipping.json');
+    let baseHref =  (document.querySelector('base') || {}).href;
+    return this.http.get(baseHref + '/assets/shipping.json');
   }
   constructor(
     private http: HttpClient
