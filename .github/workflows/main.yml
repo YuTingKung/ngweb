@@ -46,4 +46,4 @@ jobs:
       - name: Deploy to github pages
         env:
           GITHUB_TOKEN: ${{ secrets.NGWEBWORKFLOW }}
-        run: reponame=${{ github.repository }} npm run deploy
+        run: reponame=${{ github.repository.name }} npm run deploy
