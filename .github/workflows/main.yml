@@ -46,4 +46,4 @@ jobs:
       - name: Deploy to github pages
         env:
           GITHUB_TOKEN: ${{ secrets.NGWEBWORKFLOW }}
-        run: npm run deploy
+        run: ng deploy --no-silent --base-href=/ngweb/ --name='YuTingKung' --email='davidkung007@gmail.com'
