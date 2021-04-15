@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test --no-watch",
+    "test": "ng test --no-watch --browsers ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng deploy --no-silent --base-href=/$reponame/ --name='YuTingKung' --email='davidkung007@gmail.com'"
