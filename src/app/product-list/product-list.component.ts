@@ -9,10 +9,23 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-  
+  num = 0;
   share() {
     window.alert('The product has been shared!');
   }
+
+  vib()
+  {
+    navigator.vibrate(500);
+    if (navigator.vibrate) {
+      console.log('vib click');
+      this.num += 1;
+    } else {
+      console.log('vib fail');
+      this.num -= 1;
+    }
+  }
+  
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
